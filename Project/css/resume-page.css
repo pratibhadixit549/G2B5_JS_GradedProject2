@@ -1,0 +1,357 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.actions-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.small-btns {
+    width: 200px
+}
+
+.search-input {
+    max-width: 400px;
+    margin: 8px 10px !important;
+}
+
+.resume-container {
+    width: 90%;
+    display: none;
+    margin-top: 50px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px #888888;
+    border-radius: 0.25rem;
+}
+
+.resume-header {
+    background-color: #d1f6ef;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 250px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    border-radius: 0.25rem;
+}
+
+.header-center {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.candidate-image {
+    width: 200px;
+    height: 200px;
+    padding: 15px 55px 15px 55px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.position {
+    font-weight: bold;
+    bottom: 25px;
+    position: absolute;
+}
+
+.resume-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.basics {
+    width: 23%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.other-details {
+    width: 67%;
+    padding: 10px 10px 10px 0px;
+}
+
+p,
+h3,
+h2,
+h1,
+h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.work-ex {
+    margin-top: 0px;
+}
+
+.basics {
+    text-align: right;
+    background: #f8e1e2;
+    height: fit-content;
+}
+
+.basics .titles {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #a8a8a8;
+    text-align: left;
+    padding: 5px;
+}
+
+.innerDetail {
+    padding: 10px 0px 10px 40px
+}
+
+.no-result {
+    display: none;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    margin-top: 200px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px #888888;
+    background-color: #f4f4f6;
+}
+
+.details-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.no-result-image {
+    width: 350px;
+    height: 300px;
+    padding-right: 40px;
+}
+
+.no-result-text {
+    font-size: 30px;
+}
+
+.personal-info,
+.tech-skills,
+.hobbies {
+    margin-bottom: 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+/* Full-width input fields */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #686464;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    font-size: large;
+}
+
+/* Set a style for all buttons */
+button {
+    /* background-color: #11c583e7; */
+    background-color: #eeeeee;
+    color: rgb(14, 13, 13);
+    padding: 14px 20px;
+    margin: 8px 0;
+    /* border: none; */
+    border: 2px solid black;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0.25rem;
+    font-size: large;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+/* --------------------------------------------------- Responsive Resume Page Code --------------------------------------------------- */
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (min-width: 340px) and (max-width:599px) {
+
+    .basics {
+        text-align: right;
+        background: #f8e1e2;
+        height: fit-content;
+        width: 90%;
+    }
+
+    .basics .titles {
+        font-weight: bold;
+        font-size: 15px;
+        background-color: #a8a8a8;
+        text-align: left;
+        padding: 5px;
+    }
+
+    h2 {
+        padding-left: 5px;
+    }
+
+    .resume-header {
+        justify-content: center;
+    }
+
+    .no-result-image {
+        width: 80px;
+        height: 80px;
+        padding-right: 20px;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 60px;
+        padding-bottom: 20px;
+
+    }
+
+    .position {
+        font-weight: bold;
+        bottom: 25px;
+        position: absolute;
+    }
+
+    .no-result-text {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width:767px) {
+
+    .basics,
+    .other-details {
+        width: 100%
+    }
+
+    .other-details {
+        padding: 10px;
+    }
+
+    .resume-header {
+        justify-content: center;
+    }
+
+    .no-result-image {
+        width: 120px;
+        height: 120px;
+        padding-right: 20px;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 60px;
+        padding-bottom: 20px;
+
+    }
+
+    .position {
+        font-weight: bold;
+        bottom: 25px;
+        position: absolute;
+    }
+
+    .no-result-text {
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+    .resume-header {
+        justify-content: center;
+    }
+
+    .no-result-image {
+        width: 150px;
+        height: 150px;
+        padding-right: 30px;
+    }
+
+    .candidate-image {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .header-center {
+        text-align: center;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 40px;
+
+    }
+
+    .position {
+        font-weight: bold;
+        bottom: 25px;
+        position: absolute;
+    }
+
+}
