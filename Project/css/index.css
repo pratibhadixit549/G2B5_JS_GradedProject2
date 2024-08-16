@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container {
+  padding: 56px 0px;
+  box-shadow: 0px 0px 10px 2px #797976;
+  border-radius: 0.5rem;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.container {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #cccbcc;
+}
+
+/* Modal Content/Box */
+.container-content {
+  background-color: #f0ec3b;
+  margin: 15% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #686464;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  font-size: large;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #9acc33;
+  color: rgb(14, 13, 13);
+  padding: 14px 20px;
+  margin: 8px 0;
+  /* border: none; */
+  cursor: pointer;
+  width: 20%;
+  border-radius: 0.25rem;
+  font-size: larger;
+  border: 2px solid black;
+  /* align-content: center; */
+  text-align: center;
+  /* display: block; */
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+/* --------------------------------------------------- Responsive Login Code --------------------------------------------------- */
+
+
+@media screen and (min-width: 340px) and (max-width:439px) {
+
+  button {
+    padding-right: 36.8%;
+  }
+
+}
+
+
+@media screen and (min-width: 440px) and (max-width:539px) {
+
+  button {
+    padding-right: 27.8%;
+  }
+
+}
+
+
+@media screen and (min-width: 540px) and (max-width:639px) {
+
+  button {
+    padding-right: 22%;
+  }
+
+}
+
+
+@media screen and (min-width: 640px) and (max-width:776px) {
+
+  button {
+    padding-right: 18%;
+  }
+
+}
